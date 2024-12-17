@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins' sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.book{
+  background-image: url(file:///C:/Users/USER/Downloads/lib.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  opacity: 0.7;
+}
+.header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}  
+.logo{
+  width: 160px;
+  transform: translateX(-50px);
+}
+.navber a{
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin: 0 35px;
+  transition: 0.3s ease;
+  border-bottom: 4px solid transparent;
+  
+
+  
+}
+.navber a:hover, .navber a :active{
+   color: white;
+   border-bottom: 3px solid purple;
+  
+
+}
+.content{
+  padding: 10px 28px;
+  transform: translateX(150px);
+  background-color: white;
+  color: purple;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.content:hover{
+  
+  box-shadow: 0 0 30px white;
+}
+.home-content{
+  position: relative;
+}
+
+.home-content h3{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: purple;
+  transform: translateY(200px);
+}
+.home-content h5{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  transform: translateY(250px);
+
+}
+.home-content  button {
+     width: 10%;
+     padding: 10px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    transform: translateY(250px);
+    position: relative;
+    left: 35%;
+}
+.home-content button a{
+  color: white;
+}
+.home-content button:hover{
+  background-color: purple;
+  opacity: 0.5;
+}
+@keyframes slide{
+  from{
+      transform: translateY(200px);
+  }
+  to{
+      transform: translateX(0);
+  }
+}
+.home{
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.hero {
+  
+  color: #333;
+  text-align: center;
+  padding: 50px 0;
+}
+.hero img{
+  width: 50%;
+  border-radius: 30px;
+  transition: 0.5s ease;
+}
+.hero img:hover{
+  width: 55%;
+  opacity: 0.7;
+  box-shadow: 0 0 30px purple;
+}
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.hero .btn:hover {
+  background: purple;
+  opacity: 0.5;
+}
+.courses {
+  padding: 20px 0;
+}
+.courses h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course-item {
+  background: purple;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 30%;
+  margin: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+.course-item h3 {
+  margin-bottom: 10px;
+}
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+.contact form {
+  max-width: 600px;
+  margin: auto;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 3px solid purple;
+  border-radius: 5px;
+}
+.contact form .btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.contact form .btn:hover {
+  background: purple;
+  opacity: 0.5;
+}
+footer{
+  background-color: purple;
+  width: 100%;
+  padding: 50px 30px 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  opacity: 0.5;
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+.social a{
+  text-decoration: none;
+  padding: 10px;
+  
+  margin: 10px;
+}
+.social a i{
+  font-size: 2em;
+  color: white;
+  opacity: 0.9;
+}
+.list{
+  margin: 30px 0;
+}
+.list ul{
+  display: flex;
+  justify-content: center;
+}
+.list ul li a{
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s ease;
+  text-transform: uppercase;
+}
+.list ul li a:hover{
+  opacity: 3;
+}
+.copy-right{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
